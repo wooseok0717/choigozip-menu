@@ -80,3 +80,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.btn-lang {
+  font-size: 6rem;
+  padding: 3rem;
+  border-radius: 5rem;
+  margin: 6rem;
+  margin-top: 18rem;
+  font-family: "Diphylleia", sans-serif;
+  font-weight: 600;
+}
