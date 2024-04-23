@@ -30,10 +30,12 @@ const App = () => {
   if (language === '') {
     return (
       <>
-        <h1>ChoiGoZip</h1>
-        <h3>SELECT A LANGUAGE</h3>
-        <button onClick={() => handleLanguage('kor')}>한국어</button>
-        <button onClick={() => handleLanguage('eng')}>English</button>
+        <div className='logo'>ChoiGoZip</div>
+        <div className='lang-prompt'>SELECT A LANGUAGE</div>
+        <div className='btn-ctn'>
+          <button onClick={() => handleLanguage('kor')} className='btn-lang'>한국어</button>
+          <button onClick={() => handleLanguage('eng')} className='btn-lang'>English</button>
+        </div>
       </>
     )
   }
@@ -41,7 +43,10 @@ const App = () => {
   return (
     <>
       <div className='logo'>ChoiGoZip</div>
-      <img onClick={resetLanguage} src={languageLogo}/>
+      {/* <img onClick={resetLanguage} src={languageLogo}/> */}
+      <div className='lang-btn-ctn'>
+        <button className='language-btn' onClick={resetLanguage}>{language === 'kor' ? '언어 설정' : 'Language setting'}</button>
+      </div>
       {categoryList.map((category, ind) => (<CategoryEntry key={ind} category={category} language={language}/>))}
     </>
   )

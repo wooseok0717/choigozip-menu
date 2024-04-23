@@ -34,10 +34,11 @@
   justify-content: space-between;
 }
 
-.category-name {
+.category-name, .lang-prompt {
   font-size: 5rem;
   text-align: center;
-  margin: 1.5rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
   border-bottom: 0.3rem solid;
   font-family: "Diphylleia", sans-serif;
   font-weight: 600;
@@ -46,7 +47,8 @@
 
 .logo {
   font-size: 7rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  text-align: center;
 }
 
 span {
@@ -59,4 +61,22 @@ span {
 body {
   color: #440303cf;
   background-color: #f2e8eb
+}
+
+.lang-btn-ctn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-btn {
+  font-size: 2rem;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.btn-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
