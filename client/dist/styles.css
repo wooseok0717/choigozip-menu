@@ -90,3 +90,9 @@ body {
   font-family: "Diphylleia", sans-serif;
   font-weight: 600;
 }
+
+.menu-details {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: 'Single Day';
+}
