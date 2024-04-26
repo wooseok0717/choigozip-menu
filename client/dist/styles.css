@@ -29,7 +29,7 @@
 .menu-name {
   font-size: 2.5rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   display: flex;
   justify-content: space-between;
 }
@@ -92,7 +92,7 @@ body {
 }
 
 .menu-details {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 200;
   font-family: 'Single Day';
 }
