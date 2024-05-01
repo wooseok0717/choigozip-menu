@@ -3,7 +3,6 @@ import {capitalize} from './helperfn';
 
 const MenuEntry = ({menu, lang}) => {
 
-  console.log(menu);
   return (
     <div className='menu-container'>
       <div className='img-container'>

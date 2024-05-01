@@ -5,6 +5,6 @@ router.get('/getCategories', controllers.getCategories);
 
 router.get('/loadMenuList', controllers.loadMenuList);
 
-router.get('/promos', controllers.loadPromos);
+router.get('/activePromos', controllers.loadActivePromos);
 
 module.exports = router;

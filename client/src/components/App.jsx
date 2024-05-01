@@ -7,14 +7,15 @@ const App = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem('language') || '');
   const [categoryList, setCategoryList] = useState([]);
+  const [promoList, setPromoList] = useState([]);
 
   const loadCategories = () => {
     axios.get('/api/getCategories')
     .then(({data}) => setCategoryList(data));
   };
 
-  const loadPromos = () => {
-    axios.get('/api/promos')
+  const loadActivePromos = () => {
+    axios.get('/api/activePromos')
     .then(({data}) => console.log(data));
   }
 
@@ -30,7 +31,7 @@ const App = () => {
 
   useEffect(() => {
     loadCategories();
-    loadPromos();
+    loadActivePromos();
   },[]);
 
   if (language === '') {

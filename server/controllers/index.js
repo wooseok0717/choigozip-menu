@@ -11,8 +11,8 @@ module.exports = {
     axios.get(`${baseURL}/api/menuList/?id=${req.query.id}`)
     .then(({data}) => res.send(data));
   },
-  loadPromos: (req, res) => {
-    axios.get(`${baseURL}/api/promos`)
+  loadActivePromos: (req, res) => {
+    axios.get(`${baseURL}/api/activePromos`)
     .then(({data}) => res.send(data));
   }
 }
