@@ -10,5 +10,9 @@ module.exports = {
   loadMenuList: (req, res) => {
     axios.get(`${baseURL}/api/menuList/?id=${req.query.id}`)
     .then(({data}) => res.send(data));
+  },
+  loadPromos: (req, res) => {
+    axios.get(`${baseURL}/api/promos`)
+    .then(({data}) => res.send(data));
   }
 }

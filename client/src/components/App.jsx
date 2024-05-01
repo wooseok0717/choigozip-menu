@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import CategoryEntry from './CategoryEntry.jsx';
-import languageLogo from '../../dist/assets/language.png'
+import languageLogo from '../../dist/assets/language.png';
 
 const App = () => {
 
@@ -11,6 +11,11 @@ const App = () => {
   const loadCategories = () => {
     axios.get('/api/getCategories')
     .then(({data}) => setCategoryList(data));
+  };
+
+  const loadPromos = () => {
+    axios.get('/api/promos')
+    .then(({data}) => console.log(data));
   }
 
   const resetLanguage = () => {
@@ -25,6 +30,7 @@ const App = () => {
 
   useEffect(() => {
     loadCategories();
+    loadPromos();
   },[]);
 
   if (language === '') {
