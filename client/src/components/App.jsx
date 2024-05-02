@@ -2,22 +2,18 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import CategoryEntry from './CategoryEntry.jsx';
 import languageLogo from '../../dist/assets/language.png';
+import PromotionPage from './PromotionPage.jsx';
 
 const App = () => {
 
   const [language, setLanguage] = useState(localStorage.getItem('language') || '');
   const [categoryList, setCategoryList] = useState([]);
-  const [promoList, setPromoList] = useState([]);
+  const [openPromoPage, setOpenPromoPage] = useState(true);
 
   const loadCategories = () => {
     axios.get('/api/getCategories')
     .then(({data}) => setCategoryList(data));
   };
-
-  const loadActivePromos = () => {
-    axios.get('/api/activePromos')
-    .then(({data}) => console.log(data));
-  }
 
   const resetLanguage = () => {
     localStorage.removeItem('language');
@@ -31,7 +27,6 @@ const App = () => {
 
   useEffect(() => {
     loadCategories();
-    loadActivePromos();
   },[]);
 
   if (language === '') {
@@ -55,6 +50,7 @@ const App = () => {
         <button className='language-btn' onClick={resetLanguage}>{language === 'kor' ? '언어 설정' : 'Language setting'}</button>
       </div>
       {categoryList.map((category, ind) => (<CategoryEntry key={ind} category={category} language={language}/>))}
+      {openPromoPage && <PromotionPage closeModal={() => setOpenPromoPage(false)} />}
     </>
   )
 }
