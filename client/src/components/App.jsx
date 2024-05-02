@@ -50,7 +50,7 @@ const App = () => {
         <button className='language-btn' onClick={resetLanguage}>{language === 'kor' ? '언어 설정' : 'Language setting'}</button>
       </div>
       {categoryList.map((category, ind) => (<CategoryEntry key={ind} category={category} language={language}/>))}
-      {openPromoPage && <PromotionPage closeModal={() => setOpenPromoPage(false)} />}
+      {openPromoPage && <PromotionPage closeModal={() => setOpenPromoPage(false)} language={language}/>}
     </>
   )
 }

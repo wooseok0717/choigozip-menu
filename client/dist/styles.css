@@ -113,6 +113,7 @@ body {
 .modal-content {
   width: 90%;
   background-color: #f2e8eb;
+  border-radius: 2rem;
 }
 
 .modal-header, .modal-footer {
