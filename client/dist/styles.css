@@ -65,10 +65,11 @@ body {
 
 .lang-btn-ctn {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin: 1rem 3rem;
 }
 
-.language-btn {
+.language-btn, .promo-btn {
   font-size: 2rem;
   border: none;
   padding: 1.5rem;

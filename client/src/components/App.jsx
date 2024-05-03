@@ -47,6 +47,7 @@ const App = () => {
       <div className='logo'>ChoiGoZip</div>
       {/* <img onClick={resetLanguage} src={languageLogo}/> */}
       <div className='lang-btn-ctn'>
+        <button className='promo-btn' onClick={() => setOpenPromoPage(true)}>{language === 'kor' ? '프로모션' : 'Promotion'}</button>
         <button className='language-btn' onClick={resetLanguage}>{language === 'kor' ? '언어 설정' : 'Language setting'}</button>
       </div>
       {categoryList.map((category, ind) => (<CategoryEntry key={ind} category={category} language={language}/>))}
