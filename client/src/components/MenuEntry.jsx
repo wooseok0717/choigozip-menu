@@ -17,8 +17,50 @@ import menu54 from '../../dist/assets/54.jpg';
 import menu62 from '../../dist/assets/62.jpg';
 import menu63 from '../../dist/assets/63.jpg';
 import menu64 from '../../dist/assets/64.jpg';
+import menu5 from '../../dist/assets/5.jpg';
+import menu21 from '../../dist/assets/21.jpg';
+import menu22 from '../../dist/assets/22.jpg';
+import menu23 from '../../dist/assets/23.jpg';
+import menu24 from '../../dist/assets/24.jpg';
+import menu25 from '../../dist/assets/25.jpg';
+import menu28 from '../../dist/assets/28.jpg';
+import menu29 from '../../dist/assets/29.jpg';
+import menu34 from '../../dist/assets/34.jpg';
+import menu35 from '../../dist/assets/35.jpg';
+import menu36 from '../../dist/assets/36.jpg';
+import menu38 from '../../dist/assets/38.jpg';
+import menu39 from '../../dist/assets/39.jpg';
+import menu42 from '../../dist/assets/42.jpg';
+import menu43 from '../../dist/assets/43.jpg';
+import menu44 from '../../dist/assets/44.jpg';
+import menu46 from '../../dist/assets/46.jpg';
+import menu51 from '../../dist/assets/51.jpg';
+import menu55 from '../../dist/assets/55.jpg';
+import menu56 from '../../dist/assets/56.jpg';
+import menu65 from '../../dist/assets/65.jpg';
 
 const imgs = {
+  65: menu65,
+  56: menu56,
+  55: menu55,
+  51: menu51,
+  46: menu46,
+  44: menu44,
+  43: menu43,
+  42: menu42,
+  39: menu39,
+  38: menu38,
+  36: menu36,
+  35: menu35,
+  34: menu34,
+  29: menu29,
+  28: menu28,
+  25: menu25,
+  24: menu24,
+  23: menu23,
+  22: menu22,
+  21: menu21,
+  5: menu5,
   64: menu64,
   63: menu63,
   62: menu62,
