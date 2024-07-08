@@ -38,8 +38,18 @@ import menu51 from '../../dist/assets/51.jpg';
 import menu55 from '../../dist/assets/55.jpg';
 import menu56 from '../../dist/assets/56.jpg';
 import menu65 from '../../dist/assets/65.jpg';
+import menu1 from '../../dist/assets/1.jpg';
+import menu3 from '../../dist/assets/3.jpg';
+import menu30 from '../../dist/assets/30.jpg';
+import menu37 from '../../dist/assets/37.jpg';
+import menu6 from '../../dist/assets/6.jpg';
 
 const imgs = {
+  6: menu6,
+  37: menu37,
+  30: menu30,
+  3: menu3,
+  1: menu1,
   65: menu65,
   56: menu56,
   55: menu55,
