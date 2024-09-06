@@ -25,6 +25,12 @@ Once the app is running, restaurant customers can scan the QR code displayed on 
 
 [Choigozip Menu](http://54.193.126.66:3000/)
 
+## Demonstrations
+### English / Korean
+
+<img width="200" src="https://github.com/user-attachments/assets/33f0ae28-9e49-45d2-bbdc-6a5dde80c3dc">
+<img width="200" src="https://github.com/user-attachments/assets/a475d563-3cf1-4b35-b5ce-514f89d5876f">
+
 ## Technologies Used
 
 ### Frontend Framework:
